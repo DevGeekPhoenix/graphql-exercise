@@ -1,0 +1,19 @@
+
+type Book {
+  _id: ID!
+  title: String!
+  authorId: ID!
+  author: Author!
+  createdAt: Date!
+}
+
+type Query {
+  getBooks: [Book!]!
+  getBook(_id: ID!): Book!
+}
+
+type Mutation {
+  createBook(title: String!, authorId: ID!): Status!
+  editBook(_id: ID!, title: String!): Status!
+}
+

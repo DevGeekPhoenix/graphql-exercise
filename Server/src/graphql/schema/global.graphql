@@ -1,0 +1,6 @@
+scalar Date
+
+type Status {
+  msg: String!
+  status: Int!
+}
